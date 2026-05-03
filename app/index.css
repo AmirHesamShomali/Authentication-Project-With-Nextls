@@ -1,0 +1,95 @@
+html,
+body {
+    height: 100%;
+}
+
+.custom-gradient-background {
+    background-image: linear-gradient(to right,
+            #f472b6 10%,
+            #f97316 30%,
+            #ef4444 90%
+        );
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.flex-grow-1 {
+    flex-grow: 1 !important;
+}
+
+.custom-gradient {
+    background-image: linear-gradient(to right,
+            #6366f1 10%,
+            #0ea5e9 30%,
+            #34d399 90%);
+    height: 100%;
+}
+
+.form-gradient {
+    background-image: linear-gradient(to bottom, #d1d5db, #f3f4f6);
+}
+
+input.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+}
+.form-gradient-bg {
+    background-image: linear-gradient(to bottom, #d1d5db, #f3f4f6);
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(130, 100, 230, 0.5);
+    border-color: #8264e6;
+}
+.rounded-full-custom {
+    border-radius: 50px;
+}
+.login-button {
+    height: 3rem;           
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50px;
+}
+.custom-switch {
+    width: 44px;
+    height: 24px;
+    background-color: #e5e7eb;
+    border-radius: 50px;
+    position: relative;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+}
+
+.custom-switch:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+input:checked+.custom-switch {
+    background-color: #3b82f6;
+}
+
+input:checked+.custom-switch:after {
+    transform: translateX(20px);
+}
